@@ -1,0 +1,7 @@
+sequenceDiagram
+  participant Browser as Browser
+  participant Server as Server
+
+  Browser ->> Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa 
+  Server ->> Browser: Status 201, responds with the comment as JSON
+
