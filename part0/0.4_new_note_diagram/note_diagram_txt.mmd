@@ -1,0 +1,11 @@
+sequenceDiagram
+    Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note (note: "Keep it going")
+    Server->>Browser: STATUS CODE: 302 location: /exampleapp/notes
+    Browser-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    Server-->>Browser: notes document(html)
+    Browser-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server-->>Browser: css document(main.css)
+    Browser-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    Server-->>Browser: Javascript document(main.js)
+    Browser-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server-->>Browser: json document(data.json)
