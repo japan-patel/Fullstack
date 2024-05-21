@@ -1,0 +1,10 @@
+sequenceDiagram
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    Server->>Browser: Responds with HTML document
+    Browser-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server-->>Browser: Responds with CSS document
+    Browser-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    Server-->>Browser: Responds with Javascript file
+    Browser-->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server-->>Browser: Responds with JSON file 
+    
